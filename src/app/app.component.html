@@ -1,0 +1,63 @@
+<h1 class="heading">Angular Basics</h1>
+<h2>Angular Loop</h2>
+
+<ul *ngFor="let item of list">
+  <li>{{item}}</li>
+</ul>
+
+<h2>Angular form</h2>
+
+<input type="text" #name>
+<button (click)="name.value=''">Clear</button>
+<br><br>
+<input type="text" #email>
+<button (click)="email.value=''">Clear</button>
+<br><br>
+<input type="text" #phone>
+<button (click)="phone.value=''">Clear</button>
+<br><br>
+<input type="text" #message>
+<button (click)="message.value=''">Clear</button>
+<br><br>
+<button (click)="getVals(name.value,email.value,phone.value,message.value)">Submit</button>
+
+<button (click)="showList()">List</button>
+
+<h2>Api Testing</h2>
+
+<p>Get Request</p>
+<input type="text" #id>
+<!-- <button (click)="name.value=''">Clear</button> -->
+<br><br>
+<input type="text" [value]="userId">
+<!-- <button (click)="email.value=''">Clear</button> -->
+<br><br>
+<input type="text"[value]="title">
+<!-- <button (click)="phone.value=''">Clear</button> -->
+<br><br>
+<input type="text" [value]="completed">
+<button (click)="loadApi(id.value)">Load Data</button>
+<br><br>
+
+<p>Post Request</p>
+<input type="text" #id>
+<button (click)="id.value=''">Clear</button>
+<br><br>
+<input type="text" #userId>
+<button (click)="userId.value=''">Clear</button>
+<br><br>
+<input type="text" #title>
+<button (click)="title.value=''">Clear</button>
+<br><br>
+<input type="text" #completed>
+<button (click)="completed.value=''">Clear</button>
+<br><br>
+<button (click)="sendData(id.value,userId.value,title.value,completed.value)">Send Data</button>
+<br> <br>
+
+<p>Put Request</p>
+
+<button (click)="updateData(id.value,userId.value,title.value,completed.value)">Update Data</button>
+
+<p>Delete Request</p>
+<button (click)="deleteData(id.value)">Delete Data</button>

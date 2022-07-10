@@ -1,10 +1,8 @@
-import { JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   list=["Apple","Mango","Guvava","Litchi"];
@@ -14,6 +12,10 @@ export class AppComponent {
   title="";
   userId="";
   completed="";
+  out="Yogesh Gaur";
+  tempreature:string="";
+  height:string="";
+  curdol:string="";
   getVals(name:string,email:string,phone:string,message:string){
       this.myobj = {name,email,phone,message}
       this.list2.push(this.myobj);

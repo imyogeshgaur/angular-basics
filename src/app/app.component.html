@@ -61,3 +61,30 @@
 
 <p>Delete Request</p>
 <button (click)="deleteData(id.value)">Delete Data</button>
+
+<h2>Two way binding</h2>
+<!-- <input type="text" [(ngModel)]="tempreature">
+<br><br>
+<input type="text" value={{tempreature}}> -->
+
+<h2>Pipes in Angular</h2>
+<!-- <p>{{out | lowercase}}</p>
+<p>{{out | uppercase}}</p> -->
+
+<h2>Custom Pipes in Angular</h2>
+
+Height in Meters: 
+<input type="text" [(ngModel)]="height">
+<br><br>
+Height in centimeter:
+<p>{{height | mtocent}}</p>
+
+Currency in Dollar: 
+<input type="text" [(ngModel)]="curdol">
+<br><br>
+Currency in Rupee:
+<p>{{curdol | usdtoinr:[70,120]}}</p>
+
+
+
+
